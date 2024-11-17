@@ -1,0 +1,102 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0066cc, #004a99);
+    color: #333;
+}
+
+/* Estilos do Header */
+.header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 1em 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid #0066cc;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Container Principal */
+.profile-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    gap: 1.5em;
+}
+
+/* Estilo dos Dados do Usuário */
+.user-data {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.user-data p {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.user-data p strong {
+    color: #0066cc;
+}
+
+/* Botão Estilizado */
+.btn-primary {
+    padding: 0.8em 2em;
+    background: #0066cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background: #004a99;
+    transform: translateY(-3px);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .user-data {
+        padding: 1.5em;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 0.7em 1.5em;
+        font-size: 0.9rem;
+    }
+}
